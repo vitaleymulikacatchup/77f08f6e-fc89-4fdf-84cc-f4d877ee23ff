@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { ThemeProvider } from "@/providers/ThemeProvider";
 import NavbarStyleMinimal from '@/components/navbar/NavbarStyleMinimal';
@@ -13,7 +13,7 @@ import SocialProofOne from '@/components/sections/socialProof/SocialProofOne';
 import FaqBase from '@/components/sections/faq/FaqBase';
 import ContactCenter from '@/components/sections/contact/ContactCenter';
 import FooterBase from '@/components/sections/footer/FooterBase';
-import { Award, Briefcase, Building, Code, DollarSign, Folder, Handshake, HelpCircle, Layers, Lightbulb, Megaphone, Palette, Quote, Rocket, Send, Sparkles, Target, TrendingUp, Users } from "lucide-react";
+import { Award, Briefcase, Building, Code, DollarSign, Folder, Handshake, HelpCircle, Layers, Lightbulb, Megaphone, Palette, Quote, Rocket, Send, Sparkles, Target, TrendingUp, Users, Linkedin, Twitter, Github } from "lucide-react";
 
 export default function Page() {
   return (
@@ -153,7 +153,7 @@ export default function Page() {
               price: "View Case Study",
               imageSrc: "https://images.pexels.com/photos/3082341/pexels-photo-3082341.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
               imageAlt: "Mobile app interface design",
-              onProductClick: "window.open('#portfolio', '_self')"
+              onProductClick: () => window.open('#portfolio', '_self')
             },
             {
               id: "2",
@@ -161,7 +161,7 @@ export default function Page() {
               price: "View Case Study",
               imageSrc: "https://images.pexels.com/photos/18105/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=650&w=940",
               imageAlt: "E-commerce website design",
-              onProductClick: "window.open('#portfolio', '_self')"
+              onProductClick: () => window.open('#portfolio', '_self')
             },
             {
               id: "3",
@@ -169,7 +169,7 @@ export default function Page() {
               price: "View Case Study",
               imageSrc: "https://images.pexels.com/photos/15635235/pexels-photo-15635235.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
               imageAlt: "Brand identity design materials",
-              onProductClick: "window.open('#portfolio', '_self')"
+              onProductClick: () => window.open('#portfolio', '_self')
             }
           ]}
         />
@@ -247,11 +247,11 @@ export default function Page() {
               imageAlt: "Sarah Johnson portrait",
               socialLinks: [
                 {
-                  icon: "Linkedin",
+                  icon: Linkedin,
                   url: "https://linkedin.com/in/sarah-johnson"
                 },
                 {
-                  icon: "Twitter",
+                  icon: Twitter,
                   url: "https://twitter.com/sarahj_design"
                 }
               ]
@@ -265,11 +265,11 @@ export default function Page() {
               imageAlt: "Michael Chen portrait",
               socialLinks: [
                 {
-                  icon: "Github",
+                  icon: Github,
                   url: "https://github.com/michael-chen"
                 },
                 {
-                  icon: "Linkedin",
+                  icon: Linkedin,
                   url: "https://linkedin.com/in/michael-chen"
                 }
               ]
@@ -283,11 +283,11 @@ export default function Page() {
               imageAlt: "Emma Rodriguez portrait",
               socialLinks: [
                 {
-                  icon: "Twitter",
+                  icon: Twitter,
                   url: "https://twitter.com/emma_marketing"
                 },
                 {
-                  icon: "Linkedin",
+                  icon: Linkedin,
                   url: "https://linkedin.com/in/emma-rodriguez"
                 }
               ]
